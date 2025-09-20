@@ -7,6 +7,6 @@ export class AppController {
 
   @Get()
   async getHello() {
-    return await this.prisma.client.user.findMany()
+    return await this.prisma.user.findMany()
   }
 }
